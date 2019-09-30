@@ -1,4 +1,4 @@
-package com.oceanus.pay.config;
+package com.ppg.proj.config;
 
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Value;

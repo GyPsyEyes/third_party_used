@@ -1,13 +1,13 @@
-package com.oceanus.pay;
+package com.ppg.proj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PayApplication {
+public class ProjApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PayApplication.class, args);
+        SpringApplication.run(ProjApplication.class, args);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.oceanus.pay.config;
+package com.ppg.proj.config;
 
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;

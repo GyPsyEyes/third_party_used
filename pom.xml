@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.oceanus</groupId>
-    <artifactId>pay</artifactId>
+    <artifactId>proj</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pay</name>
-    <description>pay</description>
+    <name>proj</name>
+    <description>proj</description>
 
     <properties>
         <java.version>1.8</java.version>
