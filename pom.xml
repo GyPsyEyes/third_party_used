@@ -58,11 +58,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.yeepay.g3.yop</groupId>
-            <artifactId>yop-java-sdk</artifactId>
-            <version>3.2.19</version>
-        </dependency>
-        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.58</version>
@@ -103,40 +98,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>oceanus-release</id>
-            <url>http://47.103.41.194:8081/repository/maven-releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>oceanus-snapshots</id>
-            <url>http://47.103.41.194:8081/repository/maven-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <distributionManagement>
-        <repository>
-            <id>oceanus-release</id>
-            <name>oceanus-release</name>
-            <url>http://47.103.41.194:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>oceanus-snapshots</id>
-            <name>oceanus-snapshots</name>
-            <url>http://47.103.41.194:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 
 </project>
