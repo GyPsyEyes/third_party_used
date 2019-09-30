@@ -1,0 +1,24 @@
+{
+  "app_key": "sandbox_10025663662",
+  "server_root": "https://sandbox.yeepay.com/yop-center",
+  "yop_public_key": [
+    {
+      "store_type": "string",
+      "cert_type": "RSA2048",
+      "value": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgvOZ+pYh5kMofACllmOF8nUWy9/v991GRBb588jc32PYeeE256nxBrIOI7y4KClzCWntDi6Strp1CTWZwrtwWQ4aGYhjukKLiAWZ3vFFKcyrh7e/7d1enWgTYiJoH8QV/NlG5eus3S+PTZ2glV2wdpeo7/51RlxsQxP3FpR0a8G4HcxGaqzs8N+npnVUg9hGwXkeSKRpS3DILDEpzxC1D7j9F0Uni/5rF09W8QVRYC3lNySK27gGxtaYKoaymYQWKakJ1wDl6/WHCsJT3vdLF7zC5zkwJ85s0d2ZHgfkytHrXDQ8r5N8IJEe7MIAQPKlUAsI/FH/0iFspYb+DXsdfQIDAQAB"
+    }
+  ],
+  "isv_private_key": [
+    {
+      "store_type": "string",
+      "cert_type": "RSA2048",
+      "value": "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCC85n6liHmQyh8AKWWY4XydRbL3+/33UZEFvnzyNzfY9h54TbnqfEGsg4jvLgoKXMJae0OLpK2unUJNZnCu3BZDhoZiGO6QouIBZne8UUpzKuHt7/t3V6daBNiImgfxBX82Ubl66zdL49NnaCVXbB2l6jv/nVGXGxDE/cWlHRrwbgdzEZqrOzw36emdVSD2EbBeR5IpGlLcMgsMSnPELUPuP0XRSeL/msXT1bxBVFgLeU3JIrbuAbG1pgqhrKZhBYpqQnXAOXr9YcKwlPe90sXvMLnOTAnzmzR3ZkeB+TK0etcNDyvk3wgkR7swgBA8qVQCwj8Uf/SIWylhv4Nex19AgMBAAECggEAd/Ca5dPAtOBqIjmNcNMzCkGIYa94YXQAObk5sroU417WFbvbyA/1PQa0wLLHkbF1NfgZMdYids8NByRa8usvGcI60YwEm8L7fdhzeKlPidt2eFYqqrkJQe7jYgzVhdLZuL9hmpFjwSsgfByVynkHeXerOjW8QHfCiSWuOLY8c7ymKfFxj/sDrO976w6w9LsgvbyCK5v/4mq57/dQBjFl5xhzveKeOag1CSdlL7/BKj38sFQ4P82PJ8pVtwm5/4evkHtz0BtOarT9cgI6Zad3ro2s1fbwQ+1p4nS9c2OAI2CmbZN59O20Vcsc6wPKMftQE/XT5dtvwFxpOS2mDahMQQKBgQDSsVkZlckHF+R7Cfarxt4auGXIXN46+gT4Fsb/1urR0mUfk7ZJwKAb4KDiGYkyb+N2qY0lTWdZqi1GOX7GSdlsJZ5nSpm+EVteyy7ZGYSnvj/HKOUpFwgC4BF+T9sSqsPMtJ7NMoV7Hm2JDGFWopEnlzL4ZhHJto81/e2//Pd3iQKBgQCfHH6oesw4ldS14o36cjBjfdC6ZB4521wd5YYkJUw+ufGvgxq+UaGunJ4JEJzCh0/EdlXyQr5NtfMe4JRkrRN4vUZ8dPv8saMJMjqFssBc65YqXAZuuPa8K7gprjXhnH2ciLcjWen+tR5lepCYDp/Z3L7iyupnphDwqYf29LTFVQKBgQDEVqBBR2PeSFWSkuZbjSbMn6m53VD6hKK8zf0DzLNmdDnoAy6L7AVH9Tv3dvRzG/FMUxRE/qyg0gT+u/V3srn6HdRPTSWYCXSsEYvGpBEKgC/O2D003VGJ3GRw4Nm1u4xa5rZVYg8hfGl2nSLYKQY7bpsA/5zz7DvohIlZr9KsgQKBgHWzPn6jWC8DpzZlQWHi1qjCiYVYSoPCIYJ8J57VeHFuW7rZ4Q6olFH2yXErOMsuDXPnleyAMwaJci+FMkDHR4Apg9rNLxrezRwga+o7MNGL9KmhKaD+cocAUFuE45bhjIofGFquSMqCcNngsNXK+7TN9ucN9Bh4YE+nGU01+AOBAoGAWBU0wIdD+Ff1pnxXg+R0NNsd27HPvCaXiWxxzPPVFblHmXfs1wrap/md/1rAYpvLKwow3y2n2pzkZmB+AePMNaHe1miaio3fH87dGrLSe5x2i0/rtKbYsphALz2B5iB3BlAKVAZo4Od1Ab3UubYRv/bN+xuGbvPAbq1N2AYz9pk="
+    }
+  ],
+  "http_client": {
+    "connect_timeout": 10000,
+    "read_timeout": 30000,
+    "max_conn_total": 200,
+    "max_conn_per_route": 100
+  }
+}

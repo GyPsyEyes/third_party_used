@@ -1,0 +1,70 @@
+server:
+  compression:
+    enabled: true
+    min-response-size: 1
+  connection-timeout: 5000
+  port: 8088
+
+management:
+  security:
+    enabled: false
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/pay_back?autoReconnect=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    minIdle: 1
+    maxActive: 10
+    maxWait: 10000
+    timeBetweenEvictionRunsMillis: 6000
+    minEvictableIdleTimeMillis: 300000
+    testWhileIdle: true
+    testOnBorrow: true
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    defaultAutoCommit: true
+    validationQuery: select 1
+    filters: stat
+  redis:
+    database: 2
+    host: 127.0.0.1
+    prot: 6379
+    timeout: 3000ms
+
+swagger:
+  enable: true
+  base-package: com.oceanus.pay
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+
+# 易宝支付
+yeepay:
+  sanbox:
+    # 商户编号
+    customer-number: sandbox_10025663662
+    group-number: sandbox_10025663662
+    # 秘钥
+    private-key: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCC85n6liHmQyh8AKWWY4XydRbL3+/33UZEFvnzyNzfY9h54TbnqfEGsg4jvLgoKXMJae0OLpK2unUJNZnCu3BZDhoZiGO6QouIBZne8UUpzKuHt7/t3V6daBNiImgfxBX82Ubl66zdL49NnaCVXbB2l6jv/nVGXGxDE/cWlHRrwbgdzEZqrOzw36emdVSD2EbBeR5IpGlLcMgsMSnPELUPuP0XRSeL/msXT1bxBVFgLeU3JIrbuAbG1pgqhrKZhBYpqQnXAOXr9YcKwlPe90sXvMLnOTAnzmzR3ZkeB+TK0etcNDyvk3wgkR7swgBA8qVQCwj8Uf/SIWylhv4Nex19AgMBAAECggEAd/Ca5dPAtOBqIjmNcNMzCkGIYa94YXQAObk5sroU417WFbvbyA/1PQa0wLLHkbF1NfgZMdYids8NByRa8usvGcI60YwEm8L7fdhzeKlPidt2eFYqqrkJQe7jYgzVhdLZuL9hmpFjwSsgfByVynkHeXerOjW8QHfCiSWuOLY8c7ymKfFxj/sDrO976w6w9LsgvbyCK5v/4mq57/dQBjFl5xhzveKeOag1CSdlL7/BKj38sFQ4P82PJ8pVtwm5/4evkHtz0BtOarT9cgI6Zad3ro2s1fbwQ+1p4nS9c2OAI2CmbZN59O20Vcsc6wPKMftQE/XT5dtvwFxpOS2mDahMQQKBgQDSsVkZlckHF+R7Cfarxt4auGXIXN46+gT4Fsb/1urR0mUfk7ZJwKAb4KDiGYkyb+N2qY0lTWdZqi1GOX7GSdlsJZ5nSpm+EVteyy7ZGYSnvj/HKOUpFwgC4BF+T9sSqsPMtJ7NMoV7Hm2JDGFWopEnlzL4ZhHJto81/e2//Pd3iQKBgQCfHH6oesw4ldS14o36cjBjfdC6ZB4521wd5YYkJUw+ufGvgxq+UaGunJ4JEJzCh0/EdlXyQr5NtfMe4JRkrRN4vUZ8dPv8saMJMjqFssBc65YqXAZuuPa8K7gprjXhnH2ciLcjWen+tR5lepCYDp/Z3L7iyupnphDwqYf29LTFVQKBgQDEVqBBR2PeSFWSkuZbjSbMn6m53VD6hKK8zf0DzLNmdDnoAy6L7AVH9Tv3dvRzG/FMUxRE/qyg0gT+u/V3srn6HdRPTSWYCXSsEYvGpBEKgC/O2D003VGJ3GRw4Nm1u4xa5rZVYg8hfGl2nSLYKQY7bpsA/5zz7DvohIlZr9KsgQKBgHWzPn6jWC8DpzZlQWHi1qjCiYVYSoPCIYJ8J57VeHFuW7rZ4Q6olFH2yXErOMsuDXPnleyAMwaJci+FMkDHR4Apg9rNLxrezRwga+o7MNGL9KmhKaD+cocAUFuE45bhjIofGFquSMqCcNngsNXK+7TN9ucN9Bh4YE+nGU01+AOBAoGAWBU0wIdD+Ff1pnxXg+R0NNsd27HPvCaXiWxxzPPVFblHmXfs1wrap/md/1rAYpvLKwow3y2n2pzkZmB+AePMNaHe1miaio3fH87dGrLSe5x2i0/rtKbYsphALz2B5iB3BlAKVAZo4Od1Ab3UubYRv/bN+xuGbvPAbq1N2AYz9pk=
+    # 公钥
+    public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgvOZ+pYh5kMofACllmOF8nUWy9/v991GRBb588jc32PYeeE256nxBrIOI7y4KClzCWntDi6Strp1CTWZwrtwWQ4aGYhjukKLiAWZ3vFFKcyrh7e/7d1enWgTYiJoH8QV/NlG5eus3S+PTZ2glV2wdpeo7/51RlxsQxP3FpR0a8G4HcxGaqzs8N+npnVUg9hGwXkeSKRpS3DILDEpzxC1D7j9F0Uni/5rF09W8QVRYC3lNySK27gGxtaYKoaymYQWKakJ1wDl6/WHCsJT3vdLF7zC5zkwJ85s0d2ZHgfkytHrXDQ8r5N8IJEe7MIAQPKlUAsI/FH/0iFspYb+DXsdfQIDAQAB
+    #AES加密秘钥
+    aes-secret-key: K1k+dK/jpLqOiJhhvpKOng==
+    # 生产环境基础地址
+    center-base-url: https://openapi.yeepay.com/yop-center
+    # 沙盒环境基础地址
+    sandbox-base-url: https://sandbox.yeepay.com/yop-center
+    # 出款查询地址
+    transfer-query-url: /rest/v1.0/balance/transfer_query
+    # 单笔出款请求地址
+    transfer-send-url: /rest/v1.0/balance/transfer_send
+    # 批次出款请求地址
+    transfer-batch-send-url: /rest/v1.0/balance/transfer_batch_send
+    # 可用余额查询地址
+    customer-amount-query-url: /rest/v1.0/balance/query_customer_amount
+    # 出款日对账下载接口
+    remit-day-download-url: /yos/v1.0/std/bill/remitdaydownload
+
