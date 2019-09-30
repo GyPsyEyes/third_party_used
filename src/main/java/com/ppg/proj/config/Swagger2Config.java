@@ -36,7 +36,7 @@ public class Swagger2Config {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("project demo文档")
-                .description("project demo代付代发相关接口文档")
+                .description("project demo相关接口文档")
                 .version("1.0")
                 .build();
     }
