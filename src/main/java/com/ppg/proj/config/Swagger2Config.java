@@ -35,8 +35,8 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("易宝支付接口文档")
-                .description("易宝支付代付代发相关接口文档")
+                .title("project demo文档")
+                .description("project demo代付代发相关接口文档")
                 .version("1.0")
                 .build();
     }
