@@ -14,16 +14,16 @@ public class LargeExcelDataListener extends AnalysisEventListener<LargeExcelData
     @Override
     public void invoke(LargeExcelData largeExcelData, AnalysisContext analysisContext) {
         if (count == 0) {
-            LOGGER.info("First row: {}", JSON.toJSONString(largeExcelData));
+            LOGGER.info("开始读取的行数据: {}", JSON.toJSONString(largeExcelData));
         }
         count ++;
         if (count % 100000 == 0) {
-            LOGGER.info("Already read: {}", count);
+            LOGGER.info("已经读取的行数: {}", count);
         }
     }
 
     @Override
     public void doAfterAllAnalysed(AnalysisContext analysisContext) {
-        LOGGER.info("Large row count: {}", count);
+        LOGGER.info("读取的总行数为: {}", count);
     }
 }

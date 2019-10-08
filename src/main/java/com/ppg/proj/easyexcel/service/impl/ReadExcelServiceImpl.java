@@ -21,13 +21,14 @@ public class ReadExcelServiceImpl implements ReadExcelService {
     public void largeExcelRead(MultipartFile file) {
         long start = System.currentTimeMillis();
         try {
+            // 从excel第一行数据读取
             EasyExcel.read(file.getInputStream(), LargeExcelData.class, new LargeExcelDataListener())
-                    .headRowNumber(2).sheet().doRead();
+                    .headRowNumber(1).sheet().doRead();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        LOGGER.info("Large data total time spent: {}", (System.currentTimeMillis() - start) / 1000 + "秒");
+        LOGGER.info("读取文件最终所需时间: {}", (System.currentTimeMillis() - start) / 1000 + "秒");
     }
 }
