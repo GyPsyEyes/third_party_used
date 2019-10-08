@@ -33,6 +33,12 @@ spring:
     host: 127.0.0.1
     prot: 6379
     timeout: 3000ms
+  http:
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
 
 swagger:
   enable: true
