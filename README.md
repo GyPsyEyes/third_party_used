@@ -1,4 +1,4 @@
-# project_demo
+# third part used demo
 （一）spring boot demo，集成swagger，flyway
 （二）租户、角色、权限、用户功能
 （三）Alibaba easyexcel开源工具的使用
